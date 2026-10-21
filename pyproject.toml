@@ -1,0 +1,32 @@
+[project]
+name = "agentical"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Yogeswaran-SD", email = "yogeswaran.cse@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "ddgs>=9.16.0",
+    "gradio>=6.30.0",
+    "langchain>=1.4.4",
+    "langchain-chroma>=1.1.0",
+    "langchain-classic>=1.0.8",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.6.9",
+    "langchain-huggingface>=1.2.3",
+    "langchain-ollama>=1.1.0",
+    "langchain-text-splitters>=1.1.3",
+    "pypdf>=6.19.0",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+    "sentence-transformers>=6.1.0",
+]
+
+[project.scripts]
+agentical = "agentical:main"
+
+[build-system]
+requires = ["uv_build>=0.12.24,<0.13.0"]
+build-backend = "uv_build"
